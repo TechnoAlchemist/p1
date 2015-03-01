@@ -1,0 +1,36 @@
+My initial attempt at this problem was to calculate the discriminants for the 
+various conditions outlined. I suspected that my control flow would be based 
+on value of discriminant. I psuedo coded on a plain sheet of paper the various
+steps that I needed to take. It was a mess! I had one large if statement and
+various if and else if statements nested under it. The code did not smell
+right to me.
+
+I decided to do some research into the nature of the quadratic equation. From
+Algebra, I knew how to solve a polynomial expression using the quadratic 
+equation. However, it became apparent that I needed to understand the
+mathematical logic behind it. This is where my breakthrough occured. 
+
+I decided that I needed to check for three main conditions regarding the 
+discriminant:
+	-Wheter the discriminant was equal in value to 0
+	-Whether the discriminante was less than 0
+	-Whether the discriminant was greater than 0
+
+From the first condition, I would determine whether the roots are imaginary. 
+The second condition would infrom me if the the roots are equal. Finally, the
+third condition would tell me if the roots were unequal. 
+
+At this moment, I thought it made sense to build a QuadraticEquation object 
+seperate to the assignment to test my assumptions. I had success with this
+approach and some unexpected behavior occured. I realize that I was not
+accounting the square root of negative numbers and knew that I needed to 
+rectify this problem. In effect, my QuadraticEquation program became my
+laboratory for this problem.  I was able to implement my approach from my 
+testing and have refined for the task at hand.
+
+In short, I continually refactored my code until it met the checks outlined in
+the assigment. There may be some edge cases where I'm not as rigours as I need
+to be and that is programming. You make incremental steps and build upon it.
+There are probably more direct ways of solving this problem but given the
+constraints I had to play by the rules.   
+     
